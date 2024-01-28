@@ -1,0 +1,24 @@
+<!-- assets/templates/company_detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ company.name }}</title>
+</head>
+<body>
+    <h1>{{ company.name }}</h1>
+    <h2>Employees:</h2>
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee.name }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Devices:</h2>
+    <ul>
+        {% for device in devices %}
+            <li>{{ device.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
